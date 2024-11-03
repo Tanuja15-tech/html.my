@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link
+        href=https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(22, 29, 111);
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            padding-right: 2rem;
+            overflow: hidden;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 88px;
+            background-color: rgb(11, 47, 159);
+            font-size: larger;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 30 px;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            padding-right: 0rem;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(112, 112, 249);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            color: rgb(199, 255, 216);
+            font-weight: 750;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .First {
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+        }
+
+        .leftSection {
+
+            width: 50%;
+            height: auto;
+            align-items: center;
+            font-size: 5rem;
+            display: flex;
+            /* This will ensure that the text and animated part are aligned on the same line */
+            flex-wrap: wrap;
+            /* Allows wrapping of content to next line if necessary */
+
+        }
+
+        .High {
+            color: rgb(192, 210, 51);
+        }
+
+        .rightSection {
+            width: 30%;
+            height: 40px;
+            align-items: center;
+
+        }
+
+        .rightSection img {
+            align-items: center;
+            padding-right: 0rem;
+        }
+
+        #element {
+            color: rgb(192, 210, 51);
+            display: inline;
+            /* Ensure the animated text stays on the same line */
+            margin-left: 10px;
+            /* Add some spacing between "Enthusiastic" and the animated text */
+            font-style: italic;
+        }
+
+        .Edu {
+            color: rgb(152, 222, 217);
+            font-size: 12px;
+            padding: 30px;
+        }
+
+        .diff {
+
+            font-size: 30px;
+            color: rgb(192, 210, 51);
+            /* Change the color to make it more visible */
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Tanuja Bisht</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="First">
+            <div class="leftSection">
+                Hello ,I am <span class="High">Tanuja</span>
+                <br>
+                I am an Enthusiastic
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="./ai-generated-8775232_640.png">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web Developer</i>.', 'Graphic Designer.', 'Data Analyst'],
+            typeSpeed: 60,
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <hr>
+    <div class="Edu">
+        <span class="diff"> Education</span>
+        <br>
+        And Certifications
+    </div>
+
+</body>
+
+</html>
